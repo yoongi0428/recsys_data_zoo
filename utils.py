@@ -14,7 +14,7 @@ def load_raw_df(dataset, data_to_file, data_to_sep):
         return load_gowalla_df(data_to_file[dataset], data_to_sep[dataset])
     elif dataset == 'citeulike':
         return load_citeulike_df(data_to_file[dataset], data_to_sep[dataset])
-    elif dataset in ['epinions', 'pinterest', 'yelp']:
+    elif dataset in ['epinions', 'pinterest', 'yelp2018']:
         return load_epinions_df(data_to_file[dataset], data_to_sep[dataset])
 
     skiprows = 1 if dataset in ['ml-20m', 'ml-25m'] else None
