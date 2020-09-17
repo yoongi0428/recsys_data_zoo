@@ -8,7 +8,7 @@ import json
 from tqdm import tqdm
 
 def load_raw_df(dataset, data_to_file, data_to_sep):
-    if dataset == 'amusic':
+    if dataset in ['amusic', 'acd', 'acna', 'agames']:
         return load_amusic_df(data_to_file[dataset])
     elif dataset == 'gowalla':
         return load_gowalla_df(data_to_file[dataset], data_to_sep[dataset])
@@ -88,7 +88,7 @@ def load_yelp_df(filepath):
     return df
 
 def load_amusic_df(filepath):
-    with open('data/amusic/Digital_Music_5.json', 'rt') as f:
+    with open(filepath, 'rt') as f:
         lines = f.readlines()
 
     users = []
@@ -111,6 +111,12 @@ def load_amusic_df(filepath):
         'timestamp': timestamps
     }
     df = pd.DataFrame(df_dict)
+    return df
+
+def load_ciao_df(filepath, sep):
+    df = pd.read_csv(filepath, sep=sep, names=['user', 'item'], skiprows=1).dropna()
+    df['ratings'] = np.ones(len(df))
+    df['timestamp'] = np.ones(len(df))
     return df
 
 def process_time(time_str):

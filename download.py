@@ -14,6 +14,10 @@ dataset_to_urls = {
     'ml-20m': 'http://files.grouplens.org/datasets/movielens/ml-20m.zip',
     'ml-25m': 'http://files.grouplens.org/datasets/movielens/ml-25m.zip',
     'amusic': 'http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Digital_Music_5.json.gz',  # 5-core
+    'acd': 'http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/CDs_and_Vinyl_5.json.gz',  # 5-core, Hierarchical Gating Networks for Sequential Recommendation
+    'acna': 'http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Cell_Phones_and_Accessories_5.json.gz',  # 5-core, Collaborative Translational Metric Learning
+    'agames': 'http://deepyeti.ucsd.edu/jianmo/amazon/categoryFilesSmall/Video_Games_5.json.gz',
+    'ciao': 'https://github.com/pcy1302/TransCF/raw/master/data/ciao/ratings.dat',
     'epinions': 'http://www.trustlet.org/datasets/downloaded_epinions/ratings_data.txt.bz2',
     'gowalla': 'https://snap.stanford.edu/data/loc-gowalla_totalCheckins.txt.gz',
     'citeulike': 'https://raw.githubusercontent.com/js05212/citeulike-a/master/users.dat',
