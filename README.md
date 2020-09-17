@@ -16,7 +16,7 @@
 |   Epinions   	        |    E-commerce    	|  Rating  	|     X     |                                 -                                	| [Download](http://www.trustlet.org/datasets/downloaded_epinions/ratings_data.txt.bz2)  |
 |     Yelp-2015     	        |    Restaurant    	|  Rating  	|     -     |    - (Original page is closed)   	| [Page](https://github.com/hexiangnan/sigir16-eals)  |
 |     Yelp-2018     	        |    Restaurant    	|  Rating  	|     -     |    - (Original page is closed)   	| [Page](https://github.com/xiangwang1223/knowledge_graph_attention_network/)  |
-|   citeulike  	        | Citation Network 	|   Click  	|     X     |                           Tags of item                           	| [Page](https://github.com/js05212/citeulike-a)  |
+|   CiteULike-a  	        | Citation Network 	|   Click  	|     X     |                           Tags of item                           	| [Page](https://github.com/js05212/citeulike-a)  |
 |   Pinterest  	        |  Social Network  	|   Click  	|     X     |                Item metadata (e.g. Item category)                	| [Raw](https://sites.google.com/site/xueatalphabeta/academic-projects), [NCF](https://github.com/hexiangnan/neural_collaborative_filtering)  |
 |    Gowalla   	|  Social Network  	|   Click  	|     O     	| Relation between users, item metadata (e.g. longitude, latitude) 	| [Page](https://snap.stanford.edu/data/loc-Gowalla.html)  |
 
