@@ -12,7 +12,7 @@
 |   Epinions   	        |    E-commerce    	|  Rating  	|     X     |                                 -                                	| [Download](http://www.trustlet.org/datasets/downloaded_epinions/ratings_data.txt.bz2)  |
 |     Yelp-2015     	        |    Restaurant    	|  Rating  	|     -     |    - (Original page is closed)   	| [Page](https://github.com/hexiangnan/sigir16-eals)  |
 |     Yelp-2018     	        |    Restaurant    	|  Rating  	|     -     |    - (Original page is closed)   	| [Page](https://github.com/xiangwang1223/knowledge_graph_attention_network/)  |
-|   citeulike  	        | Citation Network 	|   Click  	|     X     |                           Tags of item                           	| [Page](https://github.com/js05212/citeulike-a)  |
+|   CiteULike-a  	        | Citation Network 	|   Click  	|     X     |                           Tags of item                           	| [Page](https://github.com/js05212/citeulike-a)  |
 |   Pinterest  	        |  Social Network  	|   Click  	|     X     |                Item metadata (e.g. Item category)                	| [Raw](https://sites.google.com/site/xueatalphabeta/academic-projects), [NCF](https://github.com/hexiangnan/neural_collaborative_filtering)  |
 |    Gowalla   	|  Social Network  	|   Click  	|     O     	| Relation between users, item metadata (e.g. longitude, latitude) 	| [Page](https://snap.stanford.edu/data/loc-Gowalla.html)  |
 
@@ -40,7 +40,7 @@
 
 ### *<u>Raw data (data without preprocessing)</u>*
 
-|        Dataset      	|     # Users    	|      # Items     	|      # Ratings    	|     User Avg. Ratings    	|     Sparsity    	|     # Users / # Items    	|     Gini User    	|     Gini Item    	|     Item Concen.    	|
+|        Dataset      	|     # Users    	|      # Items     	|      # Ratings    	|     User Avg. Ratings    	|     Sparsity    	|     Shape    	|     Gini User    	|     Gini Item    	|     Item Concen.    	|
 |:-------------------:	|:--------------:	|:----------------:	|:-----------------:	|:------------------------:	|:---------------:	|:------------------------:	|:----------------:	|:----------------:	|:-------------------:	|
 |         ML-1M       	|      6,040     	|       3,706      	|      1,000,209    	|           165.60         	|      0.9553     	|           1.6298         	|       0.5286     	|       0.6336     	|        0.2828       	|
 |        ML-10M       	|      69,878    	|       10,677     	|     10,000,054    	|           143.11         	|      0.9866     	|           6.5447         	|       0.5707     	|       0.8052     	|        0.5165       	|
@@ -58,7 +58,7 @@
 
 ### *<u>10-minimum User Interactions</u>*
 
-|        Dataset      	|     # Users    	|      # Items     	|      # Ratings    	|     User Avg. Ratings    	|     Sparsity    	|     # Users / # Items    	|     Gini User    	|     Gini Item    	|     Item Concen.    	|
+|        Dataset      	|     # Users    	|      # Items     	|      # Ratings    	|     User Avg. Ratings    	|     Sparsity    	|     Shape    	|     Gini User    	|     Gini Item    	|     Item Concen.    	|
 |:-------------------:	|:--------------:	|:----------------:	|:-----------------:	|:------------------------:	|:---------------:	|:------------------------:	|:----------------:	|:----------------:	|:-------------------:	|
 |         ML-1M       	|      6,040     	|       3,706      	|      1,000,209    	|           165.60         	|      0.9553     	|           1.6298         	|       0.5286     	|       0.6336     	|        0.2828       	|
 |        ML-10M       	|      69,878    	|       10,677     	|     10,000,054    	|           143.11         	|      0.9866     	|           6.5447         	|       0.5707     	|       0.8052     	|        0.5165       	|
@@ -75,7 +75,7 @@
 </br>
 
 ### *<u>20-minimum User Interactions</u>*
-|        Dataset      	|     # Users    	|      # Items     	|      # Ratings    	|     User Avg. Ratings    	|     Sparsity    	|     # Users / # Items    	|     Gini User    	|     Gini Item    	|     Item Concen.    	|
+|        Dataset      	|     # Users    	|      # Items     	|      # Ratings    	|     User Avg. Ratings    	|     Sparsity    	|     Shape    	|     Gini User    	|     Gini Item    	|     Item Concen.    	|
 |:-------------------:	|:--------------:	|:----------------:	|:-----------------:	|:------------------------:	|:---------------:	|:------------------------:	|:----------------:	|:----------------:	|:-------------------:	|
 |         ML-1M       	|      6,040     	|       3,706      	|      1,000,209    	|           165.60         	|      0.9553     	|           1.6298         	|       0.5286     	|       0.6336     	|        0.2828       	|
 |        ML-10M       	|      69,878    	|       10,677     	|     10,000,054    	|           143.11         	|      0.9866     	|           6.5447         	|       0.5707     	|       0.8052     	|        0.5165       	|
@@ -93,7 +93,7 @@
 
 ### *<u>10-core Settings</u>*
 
-|        Dataset      	|              # Users            	|     # Items    	|      # Ratings    	|     User Avg. Ratings    	|     Sparsity    	|     # Users / # Items    	|     Gini User    	|     Gini Item    	|     Item Concen.    	|
+|        Dataset      	|              # Users            	|     # Items    	|      # Ratings    	|     User Avg. Ratings    	|     Sparsity    	|     Shape    	|     Gini User    	|     Gini Item    	|     Item Concen.    	|
 |:-------------------:	|:-------------------------------:	|:--------------:	|:-----------------:	|:------------------------:	|:---------------:	|:------------------------:	|:----------------:	|:----------------:	|:-------------------:	|
 |         ML-1M       	|               6,040             	|      3,260     	|       998,539     	|           165.32         	|      0.9493     	|           1.8528         	|       0.5285     	|       0.5862     	|        0.2594       	|
 |        ML-10M       	|              69,878             	|      9,708     	|      9,995,471    	|           143.04         	|      0.9853     	|           7.1980         	|       0.5706     	|       0.7867     	|        0.4945       	|
