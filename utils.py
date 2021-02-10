@@ -19,7 +19,6 @@ def load_raw_df(dataset, data_to_file, data_to_sep):
 
     skiprows = 1 if dataset in ['ml-20m', 'ml-25m'] else None
     df = pd.read_csv(data_to_file[dataset], sep=data_to_sep[dataset], names=['user', 'item', 'ratings', 'timestamp'], skiprows=skiprows)
-    df['ratings'] = np.ones(len(df))
     return df
 
 def load_citeulike_df(filepath, sep):
@@ -65,19 +64,19 @@ def load_yelp_df(filepath):
 
     users = []
     items = []
-    # ratings = []
+    ratings = []
     timestamps = []
     for line in tqdm(lines, total=len(lines)):
         d = json.loads(line)
         
         users.append(d['user_id'])
         items.append(d['business_id'])
-        # ratings.append(d['stars'])
+        ratings.append(d['stars'])
         t = d['date']
         date_arr = time.strptime(t, "%Y-%m-%d %H:%M:%S")
         timestamps.append(int(time.mktime(date_arr)))
     
-    ratings = [1] * len(users)
+    # ratings = [1] * len(users)
     df_dict = {
         'user': users,
         'item': items,
@@ -93,17 +92,17 @@ def load_amusic_df(filepath):
 
     users = []
     items = []
-    # ratings = []
+    ratings = []
     timestamps = []
     for line in tqdm(lines, total=len(lines)):
         d = json.loads(line)
         
         users.append(d['reviewerID'])
         items.append(d['asin'])
-        # ratings.append(d['overall'])
+        ratings.append(d['overall'])
         timestamps.append(d['unixReviewTime'])
     
-    ratings = [1] * len(users)
+    # ratings = [1] * len(users)
     df_dict = {
         'user': users,
         'item': items,
